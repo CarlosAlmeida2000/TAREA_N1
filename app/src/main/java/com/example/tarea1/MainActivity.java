@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else{
-                            Toast.makeText(getBaseContext(), "El número de teléfono tiene que tener los diez dígitos", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getBaseContext(), "El número de teléfono debe contener los diez dígitos", Toast.LENGTH_LONG).show();
                         }
                     }
                     else{
