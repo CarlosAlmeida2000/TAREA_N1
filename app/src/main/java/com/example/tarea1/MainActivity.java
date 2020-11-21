@@ -50,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 fecha.setText(dayOfMonth+"/"+(month+1)+"/"+year);
             }
-        }
-                ,dia,mes,ano);
+        },dia,mes,ano);
         datePickerDialog.show();
     }
     public void EnviarDatos(View view){
@@ -86,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                     else{
-                        Toast.makeText(getBaseContext(), "Es obligatorio ingresar el número de teléfono", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "Es obligatorio ingresar el número de teléfono", Toast.LENGTH_LONG).show();
                     }
                 }
                 else{
@@ -94,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             else{
-                Toast.makeText(getBaseContext(), "Es obligatorio ingresar una fecha de nacimiento", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Es obligatorio ingresar una fecha de nacimiento", Toast.LENGTH_LONG).show();
             }
         }
         else{

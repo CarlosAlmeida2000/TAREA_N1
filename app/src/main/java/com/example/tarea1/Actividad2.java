@@ -32,8 +32,7 @@ public class Actividad2 extends AppCompatActivity {
         Period er = Period.between(LocalDate.of(año, mes, dia), LocalDate.now());
 
         lblMensajeRecibido.setText("Hola, "+(b.getString("SEXO").equals("Masculino")?"bienvenido ":"bienvenida "+" \n")+
-        b.getString("NOMBRE")+ " su fecha de nacimiento es "+ b.getString("FECHA_NAC") +". En la actualidad usted tiene " + er.getYears() + " años, su número de teléfono: "+
-        b.getString("TELEFONO") + " lo registraremos para poder contactarnos con usted \n Gracias.");
-
+        b.getString("NOMBRE")+ " de acuerdo a su fecha de nacimiento: "+ b.getString("FECHA_NAC") +". En la actualidad usted tiene " + er.getYears() + " años, su número de teléfono: "+
+        b.getString("TELEFONO") + " lo registraremos para poder contactarnos con usted. Gracias.");
     }
 }

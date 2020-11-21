@@ -64,15 +64,9 @@
         android:layout_height="96dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toEndOf="@+id/lblGenero"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre">
-
-        <RadioButton
-            android:id="@+id/radFemenino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Femenino" />
 
         <RadioButton
             android:id="@+id/radMasc"
@@ -80,6 +74,11 @@
             android:layout_height="wrap_content"
             android:text="Masculino" />
 
+        <RadioButton
+            android:id="@+id/radFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Femenino" />
     </RadioGroup>
 
     <EditText
@@ -91,7 +90,7 @@
         android:layout_marginBottom="24dp"
         android:digits=" abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
         android:ems="10"
-        android:inputType="textVisiblePassword"
+        android:inputType="textPersonName"
         android:maxLength="35"
         app:layout_constraintBottom_toTopOf="@+id/radGeneros"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,12 +100,12 @@
         android:id="@+id/txtTelefono"
         android:layout_width="248dp"
         android:layout_height="44dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:inputType="number"
         android:maxLength="10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toEndOf="@+id/lblTelefono"
         app:layout_constraintTop_toBottomOf="@+id/dtFechaNac" />
 
@@ -120,21 +119,23 @@
         android:selectAllOnFocus="true"
         android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toEndOf="@+id/lblFechaNac"
         app:layout_constraintTop_toBottomOf="@+id/radGeneros" />
 
     <Button
         android:id="@+id/btnEnviar"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_width="104dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="40dp"
-        android:background="#CABEBE"
         android:backgroundTint="@color/gris"
         android:onClick="EnviarDatos"
         android:text="Enviar"
+        android:textAlignment="center"
         android:textColor="@color/black"
+        android:textColorHighlight="#FA5555"
+        android:textColorLink="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
