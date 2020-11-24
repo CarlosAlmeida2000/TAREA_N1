@@ -31,14 +31,6 @@ public class MainActivity extends AppCompatActivity {
         radGenero.setChecked(true);
 
         fecha =(EditText)findViewById(R.id.dtFechaNac);
-        fecha.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(fecha.hasFocus()){
-                    VerCalendario(v);
-                }
-            }
-        });
     }
     public void VerCalendario(View view){
         final Calendar c= Calendar.getInstance();
